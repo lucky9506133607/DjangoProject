@@ -1,7 +1,11 @@
-{% extends "base.html" %}
-
-{% block content %}
-  <form method="POST">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST">
     {% csrf_token %}
     <input type="submit" value="Click this">
 </form>
@@ -9,5 +13,5 @@
 {% if key %}
 <script>alert('{{ key }}')</script>
 {% endif %}
-
-{% endblock content %}
+</body>
+</html>
