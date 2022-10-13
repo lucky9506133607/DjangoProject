@@ -16,6 +16,6 @@ if request.method == 'POST' and 'run_script' in request.POST:
     hrms()  
  
     # return user to required page 
-    return HttpResponseRedirect(reverse('registered'))
+    #return HttpResponseRedirect(reverse('registered'))
     
         
