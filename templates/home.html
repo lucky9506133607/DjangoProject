@@ -1,5 +1,17 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Click this">
+</form>
 
-{% block content %}
-  <h1>Homepage</h1>
-{% endblock content %}
+{% if key %}
+<script>alert('{{ key }}')</script>
+{% endif %}
+</body>
+</html>
