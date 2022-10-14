@@ -1,7 +1,8 @@
-from django.urls import path
-from .views import HomePageView, AboutPageView  # new
-
+from django.conf.urls import url
+from django.contrib import admin
+from . import views
 urlpatterns = [
-    path("about/", AboutPageView.as_view(), name="about"),  # new
-    path("", HomePageView.as_view(), name="home"),
+    url(r'^admin/', admin.site.urls),
+    url(r'^$', views.button),
+    url(r'^output', views.output,name="script"),
 ]
