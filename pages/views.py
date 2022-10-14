@@ -7,12 +7,8 @@ class HomePageView(TemplateView):
 
 class AboutPageView(TemplateView):  # new
     template_name = "about.html"
-    
-    def button(request):
-        return render(request,'home.html')
 
-    def output(request):
-        data=requests.get("https://www.google.com/")
-        print(data.text)
-        data=data.text
-        return render(request,'home.html',{'data':data})
+    data=requests.get("https://www.google.com/")
+    print(data.text)
+    data=data.text
+    print(data)
