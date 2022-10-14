@@ -1,15 +1,9 @@
-from django.shortcuts import render
-
-import requests
+from django.views.generic import TemplateView
 
 
-def button(request):
+class HomePageView(TemplateView):
+    template_name = "home.html"
 
-    return render(request,'home.html')
 
-def output(request):
-    data=requests.get("https://www.google.com/")
-    print(data.text)
-    data=data.text
-    return render(request,'home.html',{'data':data})
-        
+class AboutPageView(TemplateView):  # new
+    template_name = "about.html"
