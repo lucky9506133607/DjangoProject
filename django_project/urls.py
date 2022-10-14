@@ -1,8 +1,7 @@
-from django.conf.urls import url
 from django.contrib import admin
-from . import views
+from django.urls import path, include  # new
+
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^$', views.button),
-    url(r'^output', views.output,name="script"),
+    path("admin/", admin.site.urls),
+    path("", include("pages.urls")),  # new
 ]
