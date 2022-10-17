@@ -29,8 +29,10 @@ class AboutPageView(TemplateView):  # new
     chrome_options.add_argument("--disable-dev-sh-usage")
     print("disable-dev-sh-usage")
     driver = webdriver.Chrome(service=Service(executable_path=os.environ.get("CHROMEDRIVER_PATH")), chrome_options=chrome_options)
+    print("executable_path")
     time.sleep(6)
     driver.get("https://hrms.orangetechnolab.com/Elsner/Login_Comm1.aspx")
+    print("get URL")
     driver.maximize_window()
     driver.find_element(By.XPATH, '//*[@id="txtusename"]').send_keys(Valid_user[0])
     driver.find_element(By.XPATH, '//*[@id="txtpassword"]').send_keys(Valid_pass[0])
@@ -40,4 +42,5 @@ class AboutPageView(TemplateView):  # new
     time.sleep(3)
     driver.find_element(By.XPATH, '/html/body/div[1]/aside/div/section/ul/li[1]/ul/li[3]').click()
     gettitle = driver.title
+    print("driver title get")
     driver.quit()
