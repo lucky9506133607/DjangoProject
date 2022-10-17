@@ -34,7 +34,7 @@ def HomeView(request):
         print("driver title get")
         print(f'************** {gettitle} **************')    
         print(Valid_user[0])
-        print(Valid_user[1])
+        print(Valid_user[0])
         print('code Successfully worked')
         driver.find_element(By.XPATH, '//*[@id="txtusename"]').send_keys(Valid_user[0])
         driver.find_element(By.XPATH, '//*[@id="txtpassword"]').send_keys(Valid_pass[1])
