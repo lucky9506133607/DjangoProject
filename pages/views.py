@@ -33,7 +33,7 @@ class AboutPageView(TemplateView):  # new
     time.sleep(10)
     driver.get("https://hrms.orangetechnolab.com/Elsner/Login_Comm1.aspx")
     print("get URL")
-    time.sleep(10)
+    time.sleep(20)
     gettitle = driver.title
     print("driver title get")
     print(gettitle)    
