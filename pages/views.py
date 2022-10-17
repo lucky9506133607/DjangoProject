@@ -30,8 +30,9 @@ class AboutPageView(TemplateView):  # new
     print("disable-dev-sh-usage")
     driver = webdriver.Chrome(service=Service(executable_path=os.environ.get("CHROMEDRIVER_PATH")), chrome_options=chrome_options)
     print("executable_path")
-    time.sleep(6)
+    time.sleep(10)
     driver.get("https://www.google.com/")
     print("get URL")
+    time.sleep(10)
     gettitle = driver.title
     print("driver title get")
