@@ -31,8 +31,12 @@ class AboutPageView(TemplateView):  # new
     driver = webdriver.Chrome(service=Service(executable_path=os.environ.get("CHROMEDRIVER_PATH")), chrome_options=chrome_options)
     print("executable_path")
     time.sleep(10)
-    driver.get("https://www.google.com/")
+    driver.get("https://hrms.orangetechnolab.com/Elsner/Login_Comm1.aspx")
     print("get URL")
     time.sleep(10)
     gettitle = driver.title
     print("driver title get")
+    print(gettitle)    
+    time.sleep(10)
+    print(Valid_user[0])
+    driver.find_element(By.XPATH, '//*[@id="txtusename"]').send_keys(Valid_user[0])
