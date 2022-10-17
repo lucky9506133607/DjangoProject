@@ -33,8 +33,7 @@ def HomeView(request):
         gettitle = driver.title
         print("driver title get")
         print(f'************** {gettitle} **************')    
-        # time.sleep(10)
-        # print(Valid_user[0])
+        print(Valid_user[0])
         print('code Successfully worked')
         return render(request,'home.html', {'key': gettitle})        
     return render(request,'home.html')        
