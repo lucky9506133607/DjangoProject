@@ -32,7 +32,7 @@ def HomeView(request):
         time.sleep(10)
         gettitle = driver.title
         print("driver title get")
-        print(gettitle)    
+        print(f'************** {gettitle} **************')    
         time.sleep(10)
         print(Valid_user[0])
         print('code Successfully worked')
