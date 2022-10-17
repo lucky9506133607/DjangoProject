@@ -37,7 +37,7 @@ def HomeView(request):
         print(Valid_user[0])
         print('code Successfully worked')
         driver.find_element(By.XPATH, '//*[@id="txtusename"]').send_keys(Valid_user[0])
-        driver.find_element(By.XPATH, '//*[@id="txtpassword"]').send_keys(Valid_pass[1])
+        driver.find_element(By.XPATH, '//*[@id="txtpassword"]').send_keys(Valid_pass[0])
         driver.find_element(By.XPATH, '//*[@id="btnlogin"]').click()
         print('successfull login')
         time.sleep(10)
