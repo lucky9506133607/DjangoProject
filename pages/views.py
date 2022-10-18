@@ -43,10 +43,9 @@ def HomeView(request):
         #-----------------driver.find_element(By.XPATH, '//*[@id="txtpassword"]').send_keys(Valid_pass[0])
         #-----------------print('pass name enter')
         #-----------------driver.find_element(By.XPATH, '//*[@id="btnlogin"]').click()
-        driver.find_element(By.XPATH, '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[2]').click()
         print('click on button')
         try:
-            driver.find_element(By.XPATH, '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[2]').click()
+            driver.find_element(By.XPATH, '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]').click()
          #   driver.find_element_by_xpath('/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[2]').click()
         except:
             print('exception occured')
