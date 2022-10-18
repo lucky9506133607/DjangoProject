@@ -48,7 +48,7 @@ def HomeView(request):
         except:
             print('exception occured')
         print('successfull login')
-        time.sleep(5)
+        time.sleep(10)
         print(driver.title)
         return render(request,'home.html', {'key': gettitle})        
     return render(request,'home.html')        
