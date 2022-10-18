@@ -3,5 +3,4 @@ from .views import HomeView
 
 urlpatterns = [
     path("", HomeView, name="home"),
-    path("", HomeView, name="About"),    
 ]
