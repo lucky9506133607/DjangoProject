@@ -44,7 +44,6 @@ def HomeView(request):
         #-----------------driver.find_element(By.XPATH, '//*[@id="btnlogin"]').click()
         driver.find_element(By.XPATH, '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[2]').click()
         print('successfull login')
-        time.sleep(10)
         print(driver.title)
         return render(request,'home.html', {'key': gettitle})        
     return render(request,'home.html')        
