@@ -26,7 +26,6 @@ def HomeView(request):
         print("disable-dev-sh-usage")
         driver = webdriver.Chrome(service=Service(executable_path=os.environ.get("CHROMEDRIVER_PATH")), chrome_options=chrome_options)
         print("executable_path")
-        print(str(driver.current_url))
         # time.sleep(10)
         #------------------driver.get("https://hrms.orangetechnolab.com/elsner/")---------------------
         driver.get("https://www.pythonfixing.com/2022/08/fixed-scrapy-file-is-not-running.html")
